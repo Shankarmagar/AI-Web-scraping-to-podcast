@@ -4,7 +4,7 @@ export async function generatePodcast(payload: {
   firecrawl_key: string;
   elevenlabs_key: string;
 }) {
-  const res = await fetch("http://localhost:8000/generate-podcast", {
+  const res = await fetch("https://ai-web-scraping-to-podcast.onrender.com/generate-podcast", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
